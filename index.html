@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="text-center">Bookmarker</h1>
+            <div class="form-input">
+                <h2 class="text-center" >
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites 
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="mb-3">
+                    <label for="bookName" class="form-label"><i class="fa-solid fa-floppy-disk"></i> Site Name</label>
+                    <input required minlength="3" maxlength="20"  type="text" class="form-control" id="bookName" placeholder="Bookmark Name">
+                </div>
+                <div class="mb-3">
+                    <label for="linkInput" class="form-label"><i class="fa-solid fa-link"></i> Site URL</label>
+                    <input required  type="url" class="form-control" id="linkBook" placeholder="Website URL">
+                </div>
+                <button onclick="saveBook()">Submit</button>
+            </div>
+        </div>
+    </header>
+    <div class="data">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h3>index</h3>
+                </div>
+                <div class="col-3">
+                    <h3>Website Name</h3>
+                </div>
+                <div class="col-3">
+                    <h3>Visit</h3>
+                </div>
+                <div class="col-3">
+                    <h3>Delete</h3>
+                </div>
+            </div>
+            <div class="row" id="rowInputElement">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
